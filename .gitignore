@@ -4,7 +4,7 @@ node_modules/
 ## si tenemos un settings.json en nuestra carpeta de vscode, mantenerlo, pero
 ##     ignorar todo lo demas
 !.vscode/settings.json
-.vscode/
+.vscode/*
 
 ## si usamos vi, ignorar los swp
 *.swp
