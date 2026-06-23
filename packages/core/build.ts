@@ -2,14 +2,12 @@
 
 import esbuild from 'esbuild';
 
-await esbuild.build (
-	{
-		entryPoints: ['src/index.ts'],
-		bundle:      false,
-		format:      'esm',
-		platform:    'browser',
-		outdir:      'dist',
-		loader:      { '.ts': 'ts' },
-		sourcemap:   true,
-	}
-);
+await esbuild.build({
+  entryPoints: ['src/index.ts'],
+  bundle: false,
+  format: 'esm',
+  platform: 'browser',
+  outdir: 'dist',
+  loader: { '.ts': 'ts' },
+  sourcemap: true,
+});
