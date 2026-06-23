@@ -10,11 +10,11 @@
     }
   },
   "scripts": {
-    "build": "esbuild src/index.ts --bundle=false --format=esm --platform=browser --outdir=dist  --loader:.ts=ts",
-    "typecheck": "tsc --noEmit"
+    "build": "node build.ts",
+    "typecheck": "tsc --noEmit",
+    "types": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^26.0.0",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
